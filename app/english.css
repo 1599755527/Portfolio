@@ -1,0 +1,20 @@
+/* Preserve the original layout while allowing longer English labels to wrap. */
+html[lang="en"] .brand-name { white-space: normal; }
+html[lang="en"] .brand-role { white-space: normal; line-height: 1.35; }
+html[lang="en"] .portfolio-header .project-dropdown a { white-space: normal; overflow-wrap: break-word; }
+html[lang="en"] .home-card h2,
+html[lang="en"] .project-feature-copy h2,
+html[lang="en"] .detail-hero h1 { overflow-wrap: break-word; }
+html[lang="en"] .fairy-resolution span { min-width: 0; overflow-wrap: break-word; }
+html[lang="en"] .fairy-card-types > div { min-width: 0; }
+html[lang="en"] .we-level-panel,
+html[lang="en"] .we-enemy-description { overflow-wrap: break-word; }
+html[lang="en"] .we-variant-switch button { padding-inline: 10px; }
+html[lang="en"] .compact-sheet-toolbar { flex-wrap: wrap; }
+@media (max-width: 760px) {
+  html[lang="en"] .brand-name { font-size: clamp(1.6rem, 6vw, 2.25rem); }
+  html[lang="en"] .brand-role { font-size: 1rem; }
+  html[lang="en"] .portfolio-header nav a { font-size: 1rem; }
+  html[lang="en"] .detail-hero h1 { font-size: clamp(2rem, 8vw, 3.2rem); }
+  html[lang="en"] .detail-hero p { font-size: 1.35rem; }
+}
